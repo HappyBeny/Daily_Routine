@@ -1,9 +1,9 @@
 public class GapedNumber {
     public static void main(String[] args) {
         int num = 8;
-        long[] arr = solution(0, num);
-        for (long l : arr) {
-            System.out.println("l = " + l);
+        long[] arr = solution(4, num);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("No." + (i+1) + " : " + "arr[" + i + "] = " + arr[i]);
         }
     }
 
