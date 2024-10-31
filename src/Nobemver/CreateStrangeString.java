@@ -20,4 +20,5 @@ public class CreateStrangeString {
         answer = String.join(" ", word);
         return answer;
     }
+    //순서틀려서 커밋용
 }
