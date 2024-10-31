@@ -1,17 +1,15 @@
 public class HidePhoneNumber {
-    public static void main(String[] args) {
-
-    }
-
-    public String solution(String[] seoul) {
+    public String solution(String phone_number) {
         String answer = "";
-        for (int i = 0; i < seoul.length; i++) {
-            if(seoul[i].equals("Kim")){
-                answer += "김서방은 " + (i) + "에 있다";
-                break;
-            }
+        if (phone_number.length() == 4) {
+            return phone_number;
         }
+
+        String frontStr = phone_number.substring(0, phone_number.length() - 4);
+        String backStr = phone_number.substring(phone_number.length() - 4);
+        String changed = frontStr.replaceAll(".", "*");
+
+        answer = changed + backStr;
         return answer;
     }
-
 }
