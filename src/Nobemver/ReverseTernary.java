@@ -18,4 +18,5 @@ public class ReverseTernary {
         }
         return answer;
     }
+    //순서틀려서 ㅎㅎ
 }
