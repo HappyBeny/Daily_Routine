@@ -23,4 +23,3 @@ public class CokeProblem {
         return answer;
     }
 }
-//된거 맞나
